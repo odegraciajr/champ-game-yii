@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'GangofT';
+  src: url('/css/fonts/go3v2.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/css/fonts/go3v2.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+html, body {
+  height: 100%; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body {
+  font-size: 100%; }
+
+body {
+  background: white;
+  color: #222222;
+  padding: 0;
+  margin: 0;
+  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 150%;
+  position: relative;
+  cursor: default; }
+
+a:hover {
+  cursor: pointer; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+img {
+  -ms-interpolation-mode: bicubic; }
+#map_canvas img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object {
+  max-width: none !important; }
+
+.left {
+  float: left !important; }
+
+.right {
+  float: right !important; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
+.hide {
+  display: none; }
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+img {
+  display: inline-block;
+  vertical-align: middle; }
+
+textarea {
+  height: auto;
+  min-height: 50px; }
+
+select {
+  width: 100%; }
+
+#signup{
+	position:relative;
+}
+#signup form,#signup form .row{
+	margin:0;
+}
+
+.sign-login{
+	background-image: url("/images/login-bg.png");
+	background-repeat: no-repeat;
+	height: 282px;
+	margin: auto 0;
+	overflow: hidden;
+	width: 476px;
+}
+.sign-login form{
+	padding: 55px 45px 0;
+}
+.sign-login form .row{
+	padding-bottom:10px;
+}
+.sign-login form .row label{
+	color: #2f220f;
+	display: inline-block;
+	font-size: 15.9px;
+	font-weight: bold;
+	min-width: 85px;
+	text-align: right;
+}
+.sign-login form .row label span.required{display:none}
+.sign-login form .row input{
+	padding: 5px 7px;
+	width: 265px; height: 34px;
+	margin-left:10px;
+	color:#b7935c;
+	
+	-webkit-border-radius: 6px/7px 7px 6px 6px;
+	-moz-border-radius: 6px/7px 7px 6px 6px;
+	border-radius: 6px/7px 7px 6px 6px;
+	background-color: #5a4525;
+	-webkit-box-shadow: 1px 1px 0 1px rgba(255,255,255,.46), inset 0 0 6px 1px rgba(0,0,0,.75);
+	-moz-box-shadow: 1px 1px 0 1px rgba(255,255,255,.46), inset 0 0 6px 1px rgba(0,0,0,.75);
+	box-shadow: 1px 1px 0 1px rgba(255,255,255,.46), inset 0 0 6px 1px rgba(0,0,0,.75);
+	border: solid 1px #000;
+}
+.sign-login-header{
+	background-image: url("/images/login-head.png");
+	background-repeat: no-repeat;
+	height: 45px;
+	margin: 0 auto -43px;
+	position: relative;
+	text-align: center;
+	width: 214px;
+	z-index: 2;
+}
+.sign-login-header h3.title{
+	font-family: "GangofT";
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 1px 2px rgba(0,0,0,.75);
+	margin: 0;
+	padding: 10px 0 0;
+}
+.btn-wrap-default{
+	background-image: url("/images/login-btn.png");
+	background-repeat: no-repeat;
+	height: 61px;
+	margin: -55px auto 0;
+	position: relative;
+	width: 188px;
+}
+.btn-wrap-default .champ-btn-default{
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	height: 61px;
+	width: 188px;
+	
+	font-family: "GangofT";
+	font-size: 26px;
+	text-transform: uppercase;
+	color: #2e220e;
+	text-shadow: 1px 1px rgba(255,255,255,.48);
+}
+.btn-wrap-default .champ-btn-default:hover{
+	text-shadow: 0 0 5px rgba(255,255,190,.75), 1px 1px rgba(255,255,255,.48);
+}

@@ -3935,3 +3935,113 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2014/08/05 10:06:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 E:\wamp\www\champ\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/08/05 10:06:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 E:\wamp\www\champ\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/08/05 10:07:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 E:\wamp\www\champ\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/08/05 10:07:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 E:\wamp\www\champ\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/08/05 10:08:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 E:\wamp\www\champ\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/08/05 10:09:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 E:\wamp\www\champ\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/08/05 10:18:57 [error] [php] Undefined variable: baseURL (E:\wamp\www\champ\protected\components\Controller.php:48)
+Stack trace:
+#0 E:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#1 E:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 E:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#3 E:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#4 E:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#5 E:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 E:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#7 E:\wamp\www\champ\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\wamp\www\champ\protected\components\Controller.php (48)
+in E:\wamp\www\champ\protected\controllers\SiteController.php (32)
+in E:\wamp\www\champ\index.php (13)
+2014/08/05 10:18:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 E:\wamp\www\champ\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/08/05 10:18:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 E:\wamp\www\champ\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/08/05 10:19:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 E:\wamp\www\champ\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/08/05 10:19:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 E:\wamp\www\champ\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/08/05 10:22:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 E:\wamp\www\champ\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/08/05 10:22:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\wamp\www\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 E:\wamp\www\champ\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

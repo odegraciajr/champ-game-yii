@@ -16,6 +16,13 @@ class Helper
 		//$this->remote_folder = $this->cache_folder . 'remote/';
 	}
 	
+	public function manage_assets( $filename, $type, $version=NULL )
+	{
+		$base = Yii::app()->request->baseUrl;
+		$assets_folder = "/assets-dev/";
+		return $base . $assets_folder . $type . "/" . $filename;
+	}
+	
 	public function str_to_link($str)
 	{
 		if( strlen( trim( $str ) ) == 0 )
