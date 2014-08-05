@@ -1,229 +1,165 @@
-body
-{
-	margin: 0;
-	padding: 0;
-	color: #555;
-	font: normal 10pt Arial,Helvetica,sans-serif;
-	background: #EFEFEF;
+@font-face {
+  font-family: 'GangofT';
+  src: url('/css/fonts/go3v2.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/css/fonts/go3v2.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+html, body {
+  height: 100%; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body {
+  font-size: 100%; }
+
+body {
+  background: white;
+  color: #222222;
+  padding: 0;
+  margin: 0;
+  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 150%;
+  position: relative;
+  cursor: default; }
+
+a:hover {
+  cursor: pointer; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+img {
+  -ms-interpolation-mode: bicubic; }
+#map_canvas img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object {
+  max-width: none !important; }
+
+.left {
+  float: left !important; }
+
+.right {
+  float: right !important; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
+.hide {
+  display: none; }
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+img {
+  display: inline-block;
+  vertical-align: middle; }
+
+textarea {
+  height: auto;
+  min-height: 50px; }
+
+select {
+  width: 100%; }
+
+#signup{
+	position:relative;
+}
+#signup form,#signup form .row{
+	margin:0;
 }
 
-#page
-{
-	margin-top: 5px;
-	margin-bottom: 5px;
-	background: white;
-	border: 1px solid #C9E0ED;
+.sign-login{
+	background-image: url("/images/login-bg.png");
+	background-repeat: no-repeat;
+	height: 282px;
+	margin: auto 0;
+	overflow: hidden;
+	width: 476px;
 }
-
-#header
-{
-	margin: 0;
-	padding: 0;
-	border-top: 3px solid #C9E0ED;
+.sign-login form{
+	padding: 55px 45px 0;
 }
-
-#content
-{
-    padding: 20px;
+.sign-login form .row{
+	padding-bottom:10px;
 }
-
-#sidebar
-{
-	padding: 20px 20px 20px 0;
+.sign-login form .row label{
+	color: #2f220f;
+	display: inline-block;
+	font-size: 15.9px;
+	font-weight: bold;
+	min-width: 85px;
+	text-align: right;
 }
-
-#footer
-{
-	padding: 10px;
-	margin: 10px 20px;
-	font-size: 0.8em;
+.sign-login form .row label span.required{display:none}
+.sign-login form .row input{
+	padding: 5px 7px;
+	width: 265px; height: 34px;
+	margin-left:10px;
+	color:#b7935c;
+	
+	-webkit-border-radius: 6px/7px 7px 6px 6px;
+	-moz-border-radius: 6px/7px 7px 6px 6px;
+	border-radius: 6px/7px 7px 6px 6px;
+	background-color: #5a4525;
+	-webkit-box-shadow: 1px 1px 0 1px rgba(255,255,255,.46), inset 0 0 6px 1px rgba(0,0,0,.75);
+	-moz-box-shadow: 1px 1px 0 1px rgba(255,255,255,.46), inset 0 0 6px 1px rgba(0,0,0,.75);
+	box-shadow: 1px 1px 0 1px rgba(255,255,255,.46), inset 0 0 6px 1px rgba(0,0,0,.75);
+	border: solid 1px #000;
+}
+.sign-login-header{
+	background-image: url("/images/login-head.png");
+	background-repeat: no-repeat;
+	height: 45px;
+	margin: 0 auto -43px;
+	position: relative;
 	text-align: center;
-	border-top: 1px solid #C9E0ED;
+	width: 214px;
+	z-index: 2;
 }
-
-#logo
-{
-	padding: 10px 20px;
-	font-size: 200%;
-}
-
-#mainmenu
-{
-	background:white url(bg.gif) repeat-x left top;
-}
-
-#mainmenu ul
-{
-	padding:6px 20px 5px 20px;
-	margin:0px;
-}
-
-#mainmenu ul li
-{
-	display: inline;
-}
-
-#mainmenu ul li a
-{
-	color:#ffffff;
-	background-color:transparent;
-	font-size:12px;
-	font-weight:bold;
-	text-decoration:none;
-	padding:5px 8px;
-}
-
-#mainmenu ul li a:hover, #mainmenu ul li.active a
-{
-	color: #6399cd;
-	background-color:#EFF4FA;
-	text-decoration:none;
-}
-
-div.flash-error, div.flash-notice, div.flash-success
-{
-	padding:.8em;
-	margin-bottom:1em;
-	border:2px solid #ddd;
-}
-
-div.flash-error
-{
-	background:#FBE3E4;
-	color:#8a1f11;
-	border-color:#FBC2C4;
-}
-
-div.flash-notice
-{
-	background:#FFF6BF;
-	color:#514721;
-	border-color:#FFD324;
-}
-
-div.flash-success
-{
-	background:#E6EFC2;
-	color:#264409;
-	border-color:#C6D880;
-}
-
-div.flash-error a
-{
-	color:#8a1f11;
-}
-
-div.flash-notice a
-{
-	color:#514721;
-}
-
-div.flash-success a
-{
-	color:#264409;
-}
-
-div.form .rememberMe label
-{
-	display: inline;
-}
-
-div.view
-{
-	padding: 10px;
-	margin: 10px 0;
-	border: 1px solid #C9E0ED;
-}
-
-div.breadcrumbs
-{
-	font-size: 0.9em;
-	padding: 5px 20px;
-}
-
-div.breadcrumbs span
-{
-	font-weight: bold;
-}
-
-div.search-form
-{
-	padding: 10px;
-	margin: 10px 0;
-	background: #eee;
-}
-
-.portlet
-{
-
-}
-
-.portlet-decoration
-{
-	padding: 3px 8px;
-	background: #B7D6E7;
-	border-left: 5px solid #6FACCF;
-}
-
-.portlet-title
-{
-	font-size: 12px;
-	font-weight: bold;
-	padding: 0;
+.sign-login-header h3.title{
+	font-family: "GangofT";
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 1px 2px rgba(0,0,0,.75);
 	margin: 0;
-	color: #298dcd;
+	padding: 10px 0 0;
 }
-
-.portlet-content
-{
-	font-size:0.9em;
-	margin: 0 0 15px 0;
-	padding: 5px 8px;
-	background:#EFFDFF;
+.btn-wrap-default{
+	background-image: url("/images/login-btn.png");
+	background-repeat: no-repeat;
+	height: 61px;
+	margin: -55px auto 0;
+	position: relative;
+	width: 188px;
 }
-
-.portlet-content ul
-{
-	list-style-image:none;
-	list-style-position:outside;
-	list-style-type:none;
-	margin: 0;
-	padding: 0;
+.btn-wrap-default .champ-btn-default{
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	height: 61px;
+	width: 188px;
+	
+	font-family: "GangofT";
+	font-size: 26px;
+	text-transform: uppercase;
+	color: #2e220e;
+	text-shadow: 1px 1px rgba(255,255,255,.48);
 }
-
-.portlet-content li
-{
-	padding: 2px 0 4px 0px;
-}
-
-.operations
-{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-.operations li
-{
-	padding-bottom: 2px;
-}
-
-.operations li a
-{
-	font: bold 12px Arial;
-	color: #0066A4;
-	display: block;
-	padding: 2px 0 2px 8px;
-	line-height: 15px;
-	text-decoration: none;
-}
-
-.operations li a:visited
-{
-	color: #0066A4;
-}
-
-.operations li a:hover
-{
-	background: #80CFFF;
+.btn-wrap-default .champ-btn-default:hover{
+	text-shadow: 0 0 5px rgba(255,255,190,.75), 1px 1px rgba(255,255,255,.48);
 }

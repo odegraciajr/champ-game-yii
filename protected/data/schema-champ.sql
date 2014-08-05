@@ -1,0 +1,18 @@
+CREATE TABLE chp_users(
+	id INT(10) UNSIGNED  NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	email VARCHAR(255) NOT NULL,
+	password CHAR(60) NOT NULL,
+	username VARCHAR(100) NULL,
+	name VARCHAR(100) NULL,
+	gender TINYINT(1) NULL DEFAULT 0,
+	bio VARCHAR(255),
+	headshot TEXT NULL,
+	status TINYINT(1) NULL DEFAULT 1,
+	role TINYINT(1) NULL DEFAULT 1,
+	birth_date DATE DEFAULT '0000-00-00',
+	join_date DATE DEFAULT '0000-00-00',
+	last_login DATE DEFAULT '0000-00-00',
+	INDEX(email),
+	INDEX(password),
+	INDEX(status)
+)ENGINE=innodb;

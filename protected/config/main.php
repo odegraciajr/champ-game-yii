@@ -8,6 +8,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Championology',
+	'defaultController' => 'site',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -33,32 +34,37 @@ return array(
 	'components'=>array(
 		'user'=>array(
 			// enable cookie-based authentication
+			'class' => 'WebUser',
 			'allowAutoLogin'=>true,
 		),
 		// uncomment the following to enable URLs in path-format
-		
+		'helper'=>array(
+			// enable cookie-based authentication
+			'class' => 'Helper',
+		),
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'showScriptName' => false,
-			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+			'rules' => array(
+				'' => 'site/index',
+				'<action:(login|logout|signup)>' => 'site/<action>',
+				'site/login' => '/login',
+				'site/logout' => '/logout',
+				'site/signup' => '/signup',
 			),
 		),
 		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-		),
-		// uncomment the following to use a MySQL database
-		/*
-		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=testdrive',
+			'connectionString' => 'mysql:host=localhost;dbname=champ_db',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
+			'tablePrefix' => 'chp_',
 			'charset' => 'utf8',
 		),
-		*/
+		'authManager'=>array(
+            'class'=>'CDbAuthManager',
+            'connectionID'=>'db',
+        ),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',

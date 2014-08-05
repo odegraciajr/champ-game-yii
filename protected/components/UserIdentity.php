@@ -40,7 +40,7 @@ class UserIdentity extends CUserIdentity
 			$this->errorCode = self::ERROR_USERNAME_INVALID;
 		else:
 			$this->_id = $user->id;
-			Yii::app()->session['headshot'] = $user->headshot;
+			//Yii::app()->session['headshot'] = $user->headshot;
 			$this->errorCode = self::ERROR_NONE;
 		endif;
 		
